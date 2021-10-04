@@ -12,7 +12,7 @@
       <div class="home__container--content">Submit a link</div>
     </div>
     <div class="border-bottom__container"></div>
-    <div class="home__wrapper" v-if="linkData">
+    <div class="home__wrapper" v-if="linkData.length > 0">
       <select @change="orderBy()" v-model="selectedOption">
         <option value="" disabled selected hidden>Order By</option>
         <option value="mostVoted">Most Voted (Z -> A)</option>
